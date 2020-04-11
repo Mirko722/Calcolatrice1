@@ -1,6 +1,6 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
 
 public class Calcolatrice {
     private JPanel calcolatrice;
@@ -8,8 +8,12 @@ public class Calcolatrice {
     //casella testo e totali casella
     private JTextField textField1;
     private JButton AC;
-    private double totale1 = 0.0;
-    private double totale2 = 0.0;
+    private String totale1;
+    private String totale2;
+    private String calcolo;
+    private Double calcolo1;
+    private int operazioni;
+    String testo;
     //Numeri
     private JButton uno;
     private JButton due;
@@ -27,9 +31,8 @@ public class Calcolatrice {
     private JButton Divisione;
 
 
-    private JButton Punto;
-    private JButton Uguale;
 
+    private JButton Uguale;
 
     public Calcolatrice() {
         uno.addActionListener(new ActionListener() {
@@ -37,7 +40,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 1;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -46,7 +49,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 2;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -55,7 +58,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 3;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -64,7 +67,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 4;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -73,7 +76,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 5;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -82,7 +85,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 6;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -91,7 +94,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 7;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -100,7 +103,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 8;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -109,7 +112,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 9;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -118,7 +121,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent a) {
                 String testo = textField1.getText() + 0;
                 textField1.setText(testo);
-
+                calcolo=testo;
             }
         });
 
@@ -126,19 +129,81 @@ public class Calcolatrice {
         Piu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                
+                operazioni=1;
+           calcolo1=Double.parseDouble(calcolo);
+           textField1.setText("");
+            }
+        });
+        Meno.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                operazioni=2;
+                calcolo1=Double.parseDouble(calcolo);
+                textField1.setText("");
+            }
+        });
+
+        Moltiplicazione.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                operazioni=3;
+                calcolo1=Double.parseDouble(calcolo);
+                textField1.setText("");
+            }
+        });
+
+        Divisione.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                operazioni=4;
+                calcolo1=Double.parseDouble(calcolo);
+                textField1.setText("");
+            }
+        });
+
+        Uguale.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                switch(operazioni) {
+                    case 1:
+                    calcolo1 = calcolo1+Double.parseDouble(calcolo);
+                    textField1.setText(String.valueOf(calcolo1));
+                    break;
+                    case 2:
+                        calcolo1 = calcolo1-Double.parseDouble(calcolo) ;
+                        textField1.setText(String.valueOf(calcolo1));
+                        break;
+                    case 3:
+                        calcolo1 = calcolo1*Double.parseDouble(calcolo) ;
+                        textField1.setText(String.valueOf(calcolo1));
+                        break;
+                    case 4:
+                        calcolo1 = calcolo1/Double.parseDouble(calcolo) ;
+                        textField1.setText(String.valueOf(calcolo1));
+                        break;
+
+                }
+            }
+        });
+
+        AC.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                textField1.setText("");
+                calcolo="";
             }
         });
 
 
+
     }
-        public static void main (String[]args){
-            JFrame frame = new JFrame("Calcolatrice");
-            frame.setContentPane(new Calcolatrice().calcolatrice);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();
-            frame.setVisible(true);
-        }
+    public static void main (String[]args){
+        JFrame frame = new JFrame("Calcolatrice");
+        frame.setContentPane(new Calcolatrice().calcolatrice);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
+}
 
 
