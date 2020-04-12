@@ -29,7 +29,7 @@
           <focusable value="false"/>
           <font name="Arial Black" size="28" style="1"/>
           <foreground color="-1"/>
-          <margin top="2" left="6" bottom="2" right="6"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
           <selectedTextColor color="-11053225"/>
           <text value=""/>
         </properties>
