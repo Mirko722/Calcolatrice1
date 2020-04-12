@@ -34,6 +34,7 @@ public class Calcolatrice {
     private JButton radice;
     private JButton sin;
     private JButton cos;
+    private JLabel label;
 
     public Calcolatrice() {
         uno.addActionListener(new ActionListener() {
@@ -132,6 +133,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 operazioni=1;
            calcolo1=Double.parseDouble(calcolo);
+                label.setText(textField1.getText() + "+");
            textField1.setText("");
             }
         });
@@ -140,6 +142,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 operazioni=2;
                 calcolo1=Double.parseDouble(calcolo);
+                label.setText(textField1.getText() + "-");
                 textField1.setText("");
             }
         });
@@ -149,7 +152,9 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 operazioni=3;
                 calcolo1=Double.parseDouble(calcolo);
+                label.setText(textField1.getText() + "*");
                 textField1.setText("");
+
             }
         });
 
@@ -158,6 +163,7 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 operazioni=4;
                 calcolo1=Double.parseDouble(calcolo);
+                label.setText(textField1.getText() + ":");
                 textField1.setText("");
             }
         });
@@ -167,7 +173,9 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 operazioni=5;
                 calcolo1=Double.parseDouble(calcolo);
+                label.setText(textField1.getText() + "^");
                 textField1.setText("");
+
             }
         });
 
@@ -205,23 +213,27 @@ public class Calcolatrice {
                     case 1:
                     calcolo1 = calcolo1+Double.parseDouble(calcolo);
                     textField1.setText(String.valueOf(calcolo1));
+                        label.setText("0");
                     break;
                     case 2:
                         calcolo1 = calcolo1-Double.parseDouble(calcolo) ;
                         textField1.setText(String.valueOf(calcolo1));
+                        label.setText("0");
                         break;
                     case 3:
                         calcolo1 = calcolo1*Double.parseDouble(calcolo) ;
                         textField1.setText(String.valueOf(calcolo1));
+                        label.setText("0");
                         break;
                     case 4:
                         calcolo1 = calcolo1/Double.parseDouble(calcolo) ;
                         textField1.setText(String.valueOf(calcolo1));
+                        label.setText("0");
                         break;
                     case 5:
                         calcolo1=Math.pow(calcolo1,Double.parseDouble(calcolo));
                         textField1.setText(String.valueOf(calcolo1));
-
+                        label.setText("0");
                 }
             }
         });
