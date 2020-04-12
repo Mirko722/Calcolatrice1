@@ -255,20 +255,6 @@
           <text value="AC"/>
         </properties>
       </component>
-      <component id="c6d56" class="javax.swing.JButton" binding="zero">
-        <constraints>
-          <grid row="10" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="100" height="100"/>
-            <preferred-size width="100" height="100"/>
-          </grid>
-        </constraints>
-        <properties>
-          <background color="-12498613"/>
-          <font name="Arial Black" size="28" style="1"/>
-          <foreground color="-2631721"/>
-          <text value="0"/>
-        </properties>
-      </component>
       <component id="dba19" class="javax.swing.JButton" binding="delete">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
@@ -351,6 +337,34 @@
           <font name="Arial Black" size="28" style="1"/>
           <foreground color="-2631721"/>
           <text value="="/>
+        </properties>
+      </component>
+      <component id="c6d56" class="javax.swing.JButton" binding="zero">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="100"/>
+            <preferred-size width="100" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12498613"/>
+          <font name="Arial Black" size="28" style="1"/>
+          <foreground color="-2631721"/>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="73a3f" class="javax.swing.JButton" binding="segno">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="100"/>
+            <preferred-size width="100" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12498613"/>
+          <font name="Arial Black" size="28" style="1"/>
+          <foreground color="-2631721"/>
+          <text value="+/-"/>
         </properties>
       </component>
     </children>
