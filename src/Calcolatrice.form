@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Calcolatrice">
-  <grid id="27dc6" binding="calcolatrice" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+  <grid id="27dc6" binding="calcolatrice" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="346" height="684"/>
+      <xy x="20" y="20" width="348" height="770"/>
     </constraints>
     <properties>
       <background color="-1"/>
@@ -334,6 +334,20 @@
           <enabled value="false"/>
           <font name="Arial Black" size="18"/>
           <text value="0"/>
+        </properties>
+      </component>
+      <component id="953cb" class="javax.swing.JButton" binding="delete">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="100"/>
+            <preferred-size width="100" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12498613"/>
+          <font name="Arial Black" size="28" style="1"/>
+          <foreground color="-2631721"/>
+          <text value="del"/>
         </properties>
       </component>
     </children>

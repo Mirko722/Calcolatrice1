@@ -35,6 +35,7 @@ public class Calcolatrice {
     private JButton sin;
     private JButton cos;
     private JLabel label;
+    private JButton delete;
 
     public Calcolatrice() {
         uno.addActionListener(new ActionListener() {
@@ -243,10 +244,17 @@ public class Calcolatrice {
             public void actionPerformed(ActionEvent actionEvent) {
                 textField1.setText("");
                 calcolo="";
+                label.setText("0");
             }
         });
 
-
+        delete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                calcolo=calcolo.substring(0, calcolo.length()- 1);
+                textField1.setText(calcolo);
+            }
+        });
 
 
     }
