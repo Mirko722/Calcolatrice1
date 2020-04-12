@@ -29,10 +29,11 @@ public class Calcolatrice {
     private JButton Meno;
     private JButton Moltiplicazione;
     private JButton Divisione;
-
-
-
     private JButton Uguale;
+    private JButton Potenza;
+    private JButton radice;
+    private JButton sin;
+    private JButton cos;
 
     public Calcolatrice() {
         uno.addActionListener(new ActionListener() {
@@ -161,6 +162,42 @@ public class Calcolatrice {
             }
         });
 
+        Potenza.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                operazioni=5;
+                calcolo1=Double.parseDouble(calcolo);
+                textField1.setText("");
+            }
+        });
+
+        radice.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                calcolo1=Double.parseDouble(calcolo);
+                calcolo1=Math.sqrt(calcolo1);
+                textField1.setText(String.valueOf(calcolo1));
+            }
+        });
+
+        sin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                calcolo1=Double.parseDouble(calcolo);
+                calcolo1=Math.sin(calcolo1);
+                textField1.setText(String.valueOf(calcolo1));
+            }
+        });
+
+        cos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                calcolo1=Double.parseDouble(calcolo);
+                calcolo1=Math.cos(calcolo1);
+                textField1.setText(String.valueOf(calcolo1));
+            }
+        });
+
         Uguale.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -181,6 +218,9 @@ public class Calcolatrice {
                         calcolo1 = calcolo1/Double.parseDouble(calcolo) ;
                         textField1.setText(String.valueOf(calcolo1));
                         break;
+                    case 5:
+                        calcolo1=Math.pow(calcolo1,Double.parseDouble(calcolo));
+                        textField1.setText(String.valueOf(calcolo1));
 
                 }
             }
@@ -193,6 +233,7 @@ public class Calcolatrice {
                 calcolo="";
             }
         });
+
 
 
 
