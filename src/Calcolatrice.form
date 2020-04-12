@@ -32,7 +32,7 @@
           <foreground color="-1"/>
           <horizontalAlignment value="4"/>
           <margin top="2" left="6" bottom="2" right="6"/>
-          <selectedTextColor color="-11053225"/>
+          <selectedTextColor color="-12961222"/>
           <text value=""/>
         </properties>
       </component>
@@ -53,7 +53,7 @@
           <background color="-1"/>
           <enabled value="false"/>
           <font name="Arial Black" size="36"/>
-          <foreground color="-1"/>
+          <foreground color="-12961222"/>
           <text value="0"/>
         </properties>
       </component>
