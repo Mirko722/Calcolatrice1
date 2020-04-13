@@ -15,7 +15,7 @@
     <children>
       <component id="ada58" class="javax.swing.JLabel" binding="textField1" default-binding="true">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="100" height="75"/>
             <preferred-size width="100" height="75"/>
           </grid>
@@ -27,7 +27,8 @@
           <focusable value="true"/>
           <font name="Arial Black" size="55" style="0"/>
           <foreground color="-1"/>
-          <horizontalAlignment value="4"/>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="11"/>
           <text value=""/>
         </properties>
       </component>
@@ -323,7 +324,7 @@
       </component>
       <component id="c6d56" class="javax.swing.JButton" binding="zero">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="100" height="100"/>
             <preferred-size width="100" height="100"/>
           </grid>
@@ -450,6 +451,24 @@
           <font name="Arial Black" size="28" style="1"/>
           <foreground color="-1"/>
           <text value="*"/>
+        </properties>
+      </component>
+      <component id="aa5dc" class="javax.swing.JButton" binding="dot">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="100"/>
+            <preferred-size width="100" height="100"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentY value="0.0"/>
+          <background color="-12417548"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <focusable value="false"/>
+          <font name="Arial Black" size="28" style="1"/>
+          <foreground color="-1"/>
+          <text value=","/>
         </properties>
       </component>
     </children>

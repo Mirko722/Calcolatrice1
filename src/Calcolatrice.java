@@ -35,6 +35,7 @@ public class Calcolatrice {
     private JButton delete;
     private JButton segno;
     private JButton AC;
+    private JButton dot;
 
 
     //TASTI NUMERI
@@ -203,6 +204,14 @@ public class Calcolatrice {
             calcolo = textField1.getText();
         });
 
+        dot.addActionListener(actionEvent -> {
+            if (!textField1.getText().contains("."))
+            {
+                textField1.setText(textField1.getText() + ".");
+                calcolo=textField1.getText();
+            }
+
+        });
     }
 
     public static void main(String[] args) {
