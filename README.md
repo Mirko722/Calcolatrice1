@@ -1,5 +1,5 @@
-Calcolatrice con interfaccia grafica<h1>
-<br />
+<h1>Calcolatrice con interfaccia grafica
+
 
 ![](https://github.com/Mirko722/Calcolatrice1/blob/master/calcolatrice.PNG)
 
