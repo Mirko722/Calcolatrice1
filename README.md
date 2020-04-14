@@ -1,8 +1,7 @@
 <h1>Calcolatrice con interfaccia grafica
 
 
-![](https://github.com/Mirko722/Calcolatrice1/blob/master/calcolatrice.PNG)
-
+![](https://github.com/Mirko722/Calcolatrice1/blob/master/preview.PNG)
 
 
 Logica operazioni Mirko Bellopede<br />
