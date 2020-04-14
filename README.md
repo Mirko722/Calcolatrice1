@@ -1,6 +1,6 @@
 
 
-![](images/calcolatrice.png)
+![](calcolatrice.png)
 
 Calcolatrice con interfaccia grafica<br />
 <br />
