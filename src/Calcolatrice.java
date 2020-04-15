@@ -5,6 +5,7 @@ public class Calcolatrice {
 
     //casella testo
     private JLabel textField1;
+    //variabili di calcolo
     private String calcolo;
     private Double calcolo1;
     private int operazioni;
