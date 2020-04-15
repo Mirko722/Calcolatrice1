@@ -192,8 +192,15 @@ public class Calcolatrice {
         });
 
         delete.addActionListener(actionEvent -> {
-            calcolo = calcolo.substring(0, calcolo.length() - 1);
-            textField1.setText(calcolo);
+            if(textField1.getText().isEmpty())
+            {
+
+            }
+            else
+                {
+                calcolo = calcolo.substring(0, calcolo.length() - 1);
+                textField1.setText(calcolo);
+                }
         });
 
         segno.addActionListener(actionEvent -> {
