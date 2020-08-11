@@ -27,7 +27,7 @@
           <focusable value="true"/>
           <font name="Arial Black" size="55" style="0"/>
           <foreground color="-1"/>
-          <horizontalAlignment value="2"/>
+          <horizontalAlignment value="4"/>
           <horizontalTextPosition value="11"/>
           <text value=""/>
         </properties>
